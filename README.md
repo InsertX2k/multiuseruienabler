@@ -38,7 +38,7 @@ While this module has been tested to function properly on my personal device:
 
 ## Upgrading
 
-* **You may use the Magisk Manager's Update button to do that.**
+When upgrading, please remove the existing module and reinstall the latest release again.
 
 ## Uninstallation
 
