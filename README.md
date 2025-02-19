@@ -29,7 +29,7 @@ While this module has been tested to function properly on my personal device:
 
 ## Installation
 
-* Download the `.zip` file for the module from the releases
+* Download the `.zip` file for the module from the [releases](https://github.com/InsertX2k/multiuseruienabler/releases/latest)
 * Open Magisk Manager app
 * Click **Modules>Install from Storage>choose the module .zip file you just downloaded**
 * Click Yes, then reboot when prompted.
