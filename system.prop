@@ -1,0 +1,6 @@
+#     --------------      
+# Enables multi-user UI
+# and sets the maximum number of allowed users to 5
+#     --------------      
+fw.max_users=5
+fw.show_multiuserui=1

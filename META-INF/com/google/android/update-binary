@@ -1,0 +1,53 @@
+#!/sbin/sh
+
+#################
+# Initialization
+#################
+
+umask 022
+
+# echo before loading util_functions
+ui_print() { echo "$1"; }
+
+require_new_magisk() {
+  ui_print "*******************************"
+  ui_print " Please install Magisk v20.4+! "
+  ui_print "*******************************"
+  exit 1
+}
+
+#########################
+# Load util_functions.sh
+#########################
+
+OUTFD=$2
+ZIPFILE=$3
+
+mount /data 2>/dev/null
+
+[ -f /data/adb/magisk/util_functions.sh ] || require_new_magisk
+. /data/adb/magisk/util_functions.sh
+[ $MAGISK_VER_CODE -lt 20400 ] && require_new_magisk
+
+ui_print "****************************** "
+ui_print " Multi-User UI Enabler Module  "
+ui_print "****************************** "
+ui_print " "
+ui_print " By ziad_mrx (https://github.com/InsertX2k) "
+ui_print " "
+ui_print " "
+ui_print " Requires: Magisk v20.4+"
+ui_print " and a system that works with shell commands : "
+ui_print " am switch-user userid & pm create-user userid "
+ui_print " * It is strongly recommended that you test these commands first "
+ui_print " so you can make sure if this module will work for you or not "
+ui_print " "
+ui_print " * If you have debloated your system, be sure to know that "
+ui_print " you will need to debloat again if you create a new user, "
+ui_print " assuming the command you used to debloat was : "
+ui_print " pm uninstall --user 0 <package> "
+ui_print " "
+
+
+install_module
+exit 0

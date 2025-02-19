@@ -1,0 +1,6 @@
+id=multiuseruienabler
+name=Multi User UI Enabler
+version=v1.0
+versionCode=1
+author=ziad_mrx
+description=A magisk module that tries to enable Multi User UI by systemlessly changing build.prop to enable it.
